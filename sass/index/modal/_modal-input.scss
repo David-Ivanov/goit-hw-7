@@ -1,0 +1,40 @@
+ .form {
+
+    // position
+
+    &__box {
+        position: relative;
+
+        margin-bottom: 10px;
+    }
+
+    // input
+
+    &__input {
+        width: 100%;
+        height: 40px;
+    
+        padding-left: 42px;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    }
+
+    &__input:focus {
+        border-color: $acent-color;
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+    
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__input:focus + &__icon {
+        fill: $acent-color;
+    }
+ }

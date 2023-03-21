@@ -1,0 +1,54 @@
+.info {
+    display: flex;
+
+    // item
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    // maile and telephone
+
+    &__mail,
+    &__tel {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        color: #757575;
+    }
+
+    &__mail:hover,
+    &__mail:focus,
+    &__tel:hover,
+    &__tel:focus {
+        color: $acent-color;
+    }
+
+    // icon
+ 
+    &__icon-mail {
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;   
+
+        fill: currentColor;
+        stroke: currentColor;
+    }
+
+    &__icon-tel {
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+
+        fill: currentColor;
+        stroke: currentColor;
+    }
+}

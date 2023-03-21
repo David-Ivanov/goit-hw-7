@@ -1,5 +1,46 @@
 @import "./utilits/variables";
 @import "./base/common";
+@import "./utilits/mixin";
+@import "./utilits/extend";
 
-@import "./header/logo";
+// header
 
+@import "./index/header/header";
+@import "./index/header/logo";
+@import "./index/header/header-nav";
+@import "./index/header/heaer-info";
+
+// hero
+
+@import "./index/main/hero";
+
+// benefits
+
+@import "./index/main/benefits";
+
+// work-list
+
+@import "./index/main/work-list";
+
+// team
+
+@import "./index/main/team";
+
+// clients
+
+@import "./index/main/clients";
+
+// footer
+
+@import "./index/footer/footer-info";
+@import "./index/footer/footer-socials";
+@import "./index/footer/footer-form";
+
+// modal 
+
+@import "./index/modal/modal-base";
+@import "./index/modal/modal-lable";
+@import "./index/modal/modal-input";
+@import "./index/modal/modal-comment";
+@import "./index/modal/modal-politicy";
+@import "./index/modal/modal-submit";

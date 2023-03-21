@@ -1,0 +1,30 @@
+.footer {
+
+    // position
+
+    &__box {
+        margin-right: 93px;
+    }
+
+    &__socials {
+    display: flex;
+    }
+    // title
+
+    &__title {
+    @extend %footer-titles;
+    }
+
+    // icons
+
+    &__link {
+        @include socials($primaty-color);
+        
+        background-color: rgba(255, 255, 255, 0.1);
+        
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 10px;
+    }
+}

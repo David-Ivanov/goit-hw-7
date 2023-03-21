@@ -1,0 +1,78 @@
+
+// backdrop
+
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+// modal position
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: $primaty-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    // button
+
+    &__btn--close {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    
+        margin-top: 8px;
+        margin-left: 490px;
+    
+        background-color: $primaty-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    
+        cursor: pointer;
+    }
+
+    &__btn--icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__btn--close:hover &__btn--icon,
+    &__btn--close:focus &__btn--icon{
+        fill: $acent-color;
+    }
+}
+
+// form
+
+.modal__form {
+    padding: 2px 40px 40px 40px;
+
+    &__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    
+    color: #212121;
+    }
+}

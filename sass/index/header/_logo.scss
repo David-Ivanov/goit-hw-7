@@ -1,0 +1,11 @@
+.header__logo{
+    @extend %logo;
+
+    color: #000000;
+
+    margin-right: 93px;
+
+    &--span {
+        @extend %logo-span;
+    }
+}

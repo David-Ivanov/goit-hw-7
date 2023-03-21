@@ -1,0 +1,48 @@
+.form {
+    &__politicy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-bottom: 30px;
+    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    // button
+
+    &__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+    
+        margin-right: 7px;
+    
+        border: 2px solid #212121;
+        border-radius: 4px;
+    }
+
+    &__checkbox--hidden:checked + &__checkbox {
+        background-color: $acent-color;
+        border-color: $acent-color;
+    }
+
+    // text
+
+    &__link {
+        text-decoration-line: underline;
+
+        color: #2196f3; 
+    }
+}
+
+.checkbox {
+    &__icon {
+        width: 16px;
+        height: 15px;
+    }
+}

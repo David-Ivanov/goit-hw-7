@@ -1,0 +1,67 @@
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+
+    // position
+
+    &__flex {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__info {
+        margin-right: 70px;
+    }
+
+    // logo
+
+    &__logo {
+        @extend %logo;
+
+        margin-bottom: 20px;
+
+        color: $primaty-color;
+
+        &--span {
+            @extend %logo-span;
+        }
+    }
+
+    // information
+
+    &__address {
+        display: inline-block;
+        margin-bottom: 9px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+
+        color: $primaty-color;
+    }
+
+    &__mail,
+    &__tel {
+        display: inline-block;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+        color: #757575;
+    }
+
+    &__mail {
+        margin-bottom: 9px;
+    }
+
+    &__mail:hover,
+    &__tel:hover,
+    &__address:hover,
+    &__mail:focus,     
+    &__tel:focus,
+    &__address:focus {
+    color: $acent-color;
+}
+}
